@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AealijoScroll</title>
+
+    <script src = "js/jquery-3.6.0.min.js"></script>
+    
+    <script src="js/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/instagram.css">
+    
+</head>
+<body>
+    <section>
+        <div class="header">
+            <nav class="nav">
+                <div class="logo">
+                    <img src="img/instagram_text_logo.png" alt="인스타그램">
+                </div>
+                <div class="search">
+                    <div class="search_bg">
+                        <div class="search_icon">
+                            <a href="#"><img src="img/search.png" alt=""></a>
+                           
+                        </div>
+                        <div class="search_input">
+
+                            <input type="text" placeholder="Pesquisar">
+
+                            <div class="search_box"> 
+                                    (...)
+                                <div class="diamond"></div>
+                                <p class="search_box2">
+                                    Nenhum utilizador encontrado...
+                                </p>
+                            </div>
+
+                            <div class="x_btn">
+                                <img src="/img/x_mark.png" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu">
+                    <div><a href="#"><img id="first_image" src="img/home2.png" alt=""></a></div>
+                    <div><a href="#"><img src="img/send_message.png" alt=""></a></div>
+                    <div><a href="#"><img src="img/post.png" alt=""></a></div>
+                    <div><a href="#"><img src="img/compass.png" alt=""></a></div>
+                    <div><a href="#"><img src="img/heart_line.png" alt=""></a></div>
+                    <div>
+                        <a class="my_profile" href="#">
+                            <img id="me" src="img/reference.png" alt="">
+                        </a>
+                    </div>
+        
+
+                    <div class="my_profile2">
+                        <div class="diamond"></div>
+                        <div><img src="img/user.png" alt=""><p>Utilizador<p></div>
+                        <div><img src="img/store.png" alt=""><p>Favoritos<p></div>
+                        <div><img src="img/settings.png" alt=""><p>Definições<p></div>
+                        <div><img src="img/change.png" alt=""><p>Refresh<p></div>
+                        <div class="logout"><p>Logout</p></div>
+                        
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="bod">
+            <main class="main">
+                <div class="story">
+                    <ul>
+                        <li><a href="#"><img src="img/it.jpg" alt=""></a><p>teste 1</p></li>
+                        <li><a href="#"><img src="img/it2.jpg" alt=""></a><p>teste 2</p></li>
+                        <li><a href="#"><img src="img/it3.jpg" alt=""></a><p>teste 3</p></li>
+                        <li><a href="#"><img src="img/it4.jpg" alt=""></a><p>teste 4</p></li>
+                        <li><a href="#"><img src="img/it5.jpg" alt=""></a><p>teste 5</p></li>
+                        <li><a href="#"><img src="img/reference.png" alt=""></a><p>AealijoScroll</p></li>
+                        <button class="next_button">></button>
+                    </ul>
+                </div>
+            </main>
+        
+            <div class="post">
+                <div class="p_header">
+                    <a href=""><img src="img/wls.jpg" alt=""></a>
+                    <div class="p_name">
+                        <b>teste 1</b>
+                        <a href="#"><img src="img/more.png" alt="더보기"></a>
+                     </div>
+                </div>
+
+                <!-- Slider main container -->
+                <div class="swiper custom custom1">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Liked -->
+                        <img class="dblike" src="/img/iconsrc.png" alt="">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="img/wls.jpg" alt="이미지"></div>
+                        <div class="swiper-slide"><img src="img/wls2.jpg" alt="이미지"></div>
+                        <div class="swiper-slide"><img src="img/wls3.jpg" alt="이미지"></div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev swiper_l"></div>
+                    <div class="swiper-button-next swiper_r"></div>
+                </div>
+                
+                <div class="p_footer">
+                    <div class="post_icon">
+                        <div class="post_icon_sec">
+                            <a href="#" onclick="return false;">
+                                <img class="red_heart" src="img/heart_line.png" alt="">
+                            </a>
+                            <a href="#"><img src="img/textbox.png" alt=""></a>
+                            <a href="#"><img src="img/send_message.png" alt=""></a> 
+                        
+                            <a href="#" onclick="return false;"><img class="store" src="img/store.png" alt=""></a>
+                        </div>
+                    </div>
+
+                    <div class="liked" >
+                        <img class="p_icon" src="img/reference.jpg" alt="">
+                        <p>
+                            <b>teste 1</b>(100) 
+                            <b>legenda teste 1</b>
+                        </p>
+                    </div>
+                    <p class="p_text"><b>teste 2</b> coment_teste2.</p>
+                    <p class="p_text"><a id="comment" href="#">""</a></p>
+                    <p class="p_text"><small>12/05/2024</small></p>
+
+                    <div class="post_comment">
+                        <div class="p_c_border">
+                            <a href="#"><img src="img/smile.png" alt=""></a>
+                            <input type="text" placeholder="Adicionar comntário...">
+                            <a class="p_c_border_r" href="#">Enviar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post post2">
+                <div class="p_header">
+                    <a href=""><img src="img/wls.jpg" alt=""></a>
+                    <div class="p_name">
+                        <b>teste2</b>
+                        <a href="#"><img src="img/more.png" alt="hehe"></a>
+                     </div>
+                </div>
+
+                <!-- Slider main container -->
+                <div class="swiper custom custom2">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Liked -->
+                        <img class="dblike" src="/img/iconsrc.png" alt="">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="img/wls4.jpg" alt="이미지"></div>
+                        <div class="swiper-slide"><img src="img/wls5.jpg" alt="이미지"></div>
+                        <div class="swiper-slide"><img src="img/wls6.jpg" alt="이미지"></div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev swiper_l"></div>
+                    <div class="swiper-button-next swiper_r"></div>
+                </div>
+                
+                <div class="p_footer">
+                    <div class="post_icon">
+                        <div class="post_icon_sec">
+                            <a href="#" onclick="return false;">
+                                <img class="red_heart" src="img/heart_line.png" alt="">
+                            </a>
+                            <a href="#"><img src="img/textbox.png" alt=""></a>
+                            <a href="#"><img src="img/send_message.png" alt=""></a> 
+                        
+                            <a href="#" onclick="return false;"><img class="store" src="img/store.png" alt=""></a>
+                        </div>
+                    </div>
+
+                    <div class="liked" >
+                        <img class="p_icon" src="img/reference.png" alt="">
+                        <p>
+                            <b>teste2</b>(20) 
+                            <b>legenda_teste2</b>
+                        </p>
+                    </div>
+                    <p class="p_text"><b>teste3</b> coment_teste3</p>
+                    <p class="p_text"><a id="comment" href="#">"2"</a></p>
+                    <p class="p_text"><small>15/05/2024</small></p>
+
+                    <div class="post_comment">
+                        <div class="p_c_border">
+                            <a href="#"><img src="img/smile.png" alt=""></a>
+                            <input type="text" placeholder="Adicionar comntário...">
+                            <a class="p_c_border_r" href="#">Enviar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post post3">
+                <div class="p_header">
+                    <a href=""><img src="img/wls.jpg" alt=""></a>
+                    <div class="p_name">
+                        <b>teste3</b>
+                        <a href="#"><img src="img/more.png" alt="더보기"></a>
+                     </div>
+                </div>
+
+                <!-- Slider main container -->
+                <div class="swiper custom custom3">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Liked -->
+                        <img class="dblike" src="/img/iconsrc.png" alt="">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="img/wls7.jpg" alt="이미지"></div>
+                        <div class="swiper-slide swiper-slide2"><img src="img/wls9.jpg" alt="이미지"></div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev swiper_l"></div>
+                    <div class="swiper-button-next swiper_r"></div>
+                </div>
+                
+                <div class="p_footer">
+                    <div class="post_icon">
+                        <div class="post_icon_sec" onclick="return false;">
+                            <a href="#">
+                                <img class="red_heart" src="img/heart_line.png" alt="">
+                            </a>
+                            <a href="#"><img src="img/textbox.png" alt=""></a>
+                            <a href="#"><img src="img/send_message.png" alt=""></a> 
+                        
+                            <a href="#" onclick="return false;"><img class="store" src="img/store.png" alt=""></a>
+                        </div>
+                    </div>
+
+                    <div class="liked" >
+                        <img class="p_icon" src="img/reference.png" alt="">
+                        <p>
+                            <b>teste3</b>(32)
+                            <b></b>legenda teste 3
+                        </p>
+                    </div>
+                    <p class="p_text"><b>teste1</b> coment_teste1</p>
+                    <p class="p_text"><a id="comment" href="#">""</a></p>
+                    <p class="p_text"><small>12/05/2024</small></p>
+
+                    <div class="post_comment">
+                        <div class="p_c_border">
+                            <a href="#"><img src="img/smile.png" alt=""></a>
+                            <input type="text" placeholder="Adicionar comntário...">
+                            <a class="p_c_border_r" href="#">Enviar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info">
+                <div class="profile">
+                    <div class="profile_img_box">
+                        <img class="profile_img" src="img/reference.png" alt="">
+                    </div>
+                    <div class="profile_name">
+                        <a href="#">AealijoScroll</a>
+                        <div>Bem-Vindo à rede social dos 
+                            Cursos Profissionais da D.Sancho II</div>
+                    </div>
+                    <div class="profile_r">""
+                    </div>
+                </div>
+
+                <div class="rec">
+                    <b class="rec1">""</b>
+                    <b class="rec2">legenda_teste1</b>
+                </div>
+
+                <div class="r_p">
+                    <div class="r_p_img">
+                        <img src="img/it6.jpg" alt="">
+                    </div>
+                    <div class="r_p_name">
+                        <a href="#">teste1</a>
+                        <div>AealijoScroll1</div>
+                    </div>
+                    <span class="r_p_fol">
+                        Seguir
+                    </span>
+                </div>
+
+                <div class="r_p">
+                    <div class="r_p_img">
+                        <img src="img/it7.jpg" alt="">
+                    </div>
+                    <div class="r_p_name">
+                        <a href="#">teste2</a>
+                        <div>AealijoScroll2
+                        </div>
+                    </div>
+                    <span class="r_p_fol">
+                        Seguir
+                    </span>
+                </div>
+
+                <div class="r_p">
+                    <div class="r_p_img">
+                        <img src="img/it8.jpg" alt="">
+                    </div>
+                    <div class="r_p_name">
+                        <a href="#">teste3</a>
+                        <div>AealijoScroll3</div>
+                    </div>
+                    <span class="r_p_fol">
+                        Seguir
+                    </span>
+                </div>
+
+                <div class="r_p">
+                    <div class="r_p_img">
+                        <img src="img/it9.jpg" alt="">
+                    </div>
+                    <div class="r_p_name">
+                        <a href="#">teste4</a>
+                        <div>AealijoScroll4</div>
+                    </div>
+                    <span class="r_p_fol">
+                        Seguir
+                    </span>
+                </div>
+
+                <div class="r_p">
+                    <div class="r_p_img">
+                        <img src="img/it10.jpg" alt="">
+                    </div>
+                    <div class="r_p_name">
+                        <a href="#">teste5</a>
+                        <div>AealijoScroll5</div>
+                    </div>
+                    <span class="r_p_fol">
+                    Seguir
+                    </span>
+                </div>
+
+                <div class="copyright">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+
+                <div class="cpr_an">
+                </div>
+                
+                
+            </div>
+
+        </div>
+
+        
+
+    </section>
+
+    <script>
+        /* =======swiper JS=============*/
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal', //or vertical
+            loop: false,
+
+            allowTouchMove: false,
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                
+                clickable: false,
+                hideOnClick: false,
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            /* And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },*/
+        });
+        /* =======swiper JS end==========*/
+        
+        /* header searchbox */
+        $(".search_input input").focus(function() {
+            $(".search_box").show();
+            $(".search_icon").hide();
+            $(".x_btn").show();
+        })
+        $(".x_btn").click(function() {
+            $(this).hide();
+        })
+        $(".search_input input").focusout(function() {
+            $(".search_box").slideUp(200);
+            $(".search_icon").show();
+            $(".x_btn").hide();
+        })
+
+        /* header mini profile */
+        var i = 0;
+        document.querySelector("#me").onclick = function() {
+            event.stopPropagation();
+
+            if(i%2==0){
+                this.style.border = "1px solid #000";
+                document.getElementById("first_image").src = "img/home.png";
+                document.querySelector(".my_profile2").style.display = "block";
+            }
+            else {
+                this.style.border ="none";
+                document.getElementById("first_image").src = "img/home2.png";
+                $(".my_profile2").slideUp(200);
+            }
+            i++;
+            
+            $("body").click(function () {
+                document.querySelector("#me").style.border ="none";
+                document.getElementById("first_image").src = "img/home2.png";
+                $(".my_profile2").slideUp(200);
+                i++;
+            })
+        }
+        
+        /* post like onclick event */
+        /* post dbclick event */
+        //src="img/heart_line.png" img/red_heart.png
+        var i = 0;
+        var like = document.querySelectorAll(".red_heart");
+        like[0].onclick = function() {
+            if(i%2==0){
+                this.src = "img/red_heart.png";
+            }
+            else {
+                this.src = "img/heart_line.png";
+            } 
+            i++;
+        }
+        $(".custom1").dblclick(function() {
+            like[0].src = "img/red_heart.png";
+            i=1;
+            $(".custom1 .dblike").fadeIn(200);
+            $(".custom1 .dblike").delay(600);
+            $(".custom1 .dblike").fadeOut(300);
+        })
+
+        var j = 0;
+        like[1].onclick = function() {
+            if(j%2==0){
+                this.src = "img/red_heart.png";
+            }
+            else {
+                this.src = "img/heart_line.png";
+            } 
+            j++;
+        }
+        $(".custom2").dblclick(function() {
+            like[1].src = "img/red_heart.png";
+            j=1;
+        })
+        $(".custom2").dblclick(function() {
+            like[1].src = "img/red_heart.png";
+            j=1;
+            $(".custom2 .dblike").fadeIn(200);
+            $(".custom2 .dblike").delay(600);
+            $(".custom2 .dblike").fadeOut(300);
+        })
+
+        var k = 0;
+        like[2].onclick = function() {
+            if(k%2==0){
+                this.src = "img/red_heart.png";
+            }
+            else {
+                this.src = "img/heart_line.png";
+            } 
+            k++;
+        }
+        $(".custom3").dblclick(function() {
+            like[2].src = "img/red_heart.png";
+            k=1;
+        })
+        $(".custom3").dblclick(function() {
+            like[2].src = "img/red_heart.png";
+            k=1;
+            $(".custom3 .dblike").fadeIn(200);
+            $(".custom3 .dblike").delay(600);
+            $(".custom3 .dblike").fadeOut(300);
+        })
+
+        //post store click event
+        var store = document.querySelectorAll(".store");
+        var g = 0, f = 0, d = 0;
+        store[0].onclick = () => {
+            if(g%2==0){
+                store[0].src = "img/stored.png";}
+            else{
+                store[0].src = "img/store.png";}
+            g++;
+        }
+        store[1].onclick = () => {
+            if(f%2==0){
+                store[1].src = "img/stored.png";}
+            else{
+                store[1].src = "img/store.png";}
+            f++;
+        }
+        store[2].onclick = () => {
+            if(d%2==0){
+                store[2].src = "img/stored.png";}
+            else{
+                store[2].src = "img/store.png";}
+            d++;
+        }
+
+        
+        
+
+        
+
+
+
+    </script>
+</body>
+</html>
